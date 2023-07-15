@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.bankname {
+  top: 0;
+  right: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-loader {
+  font-family: 'Fjalla One';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-9 {
+  top: 9% !important
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.top-42 {
+  top: 42% !important;
+}
+
+.top-72 {
+  top: 72% !important;
+}
+
+.start-15 {
+  left: 15% !important;
+}
+
+.fs-70px {
+  font-size: 70px !important;
+}
+
+.fasthand {
+  font-family: "fasthand";
+}
+
+.focus {
+  text-shadow: 1px 1px 1px white;
+}
+
+.top-35 {
+  top: 35%;
+}
+
+.form-shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/*Front*/
+.card {
+  perspective: 150rem;
+  position: relative;
+  width: 100%;
+  margin: 2rem;
+  box-shadow: none;
+  background: none;
+}
+
+.card-side {
+  height: 300px;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-side.front {
+   padding: 2rem;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+/*BACK*/
+.h-50px{
+  height: 50px;
+}
+.bg-cvv{
+  background-color: grey;
+}
+.bg-azure{
+  background-color: azure;
 }
